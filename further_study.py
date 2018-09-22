@@ -127,6 +127,8 @@ def custom_remove(input_list, value):
 
     """
 
+    input_list = input_list[1:]
+
     pass
 
 
@@ -236,7 +238,14 @@ def custom_equality(some_list, another_list):
 
     """
 
-    return None
+    counter = 0
+    for i in some_list:
+    	if i == another_list[counter]:
+    		counter += 1
+    	else: 
+    		return False
+
+    return True
 
 
 ##############################################################################
