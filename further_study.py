@@ -99,16 +99,16 @@ def custom_insert(input_list, index, value):
         True
 
     """
-    #input_list = input_list[:index] + [value] + input_list[index:]
-
-   #custom_append(input_list[:index], value)
-    #custom_extend(input_list,input_list[index:])
-    input_list[]
+    # first_half = input_list[:index]
+    # final_half = input_list[index:]
+    # input_list = first_half + [value] + final_half
+    input_list[index:index] = [value]
+ 
     pass
 
-months = ['Jan', 'Mar']
-custom_insert(months, 1, 'Feb')
-print(months)
+# months = ['Jan', 'Mar']
+# custom_insert(months, 1, 'Feb')
+# print(months)
 
 
 def custom_remove(input_list, value):
