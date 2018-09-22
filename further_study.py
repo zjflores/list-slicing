@@ -218,8 +218,11 @@ def custom_contains(input_list, value):
         True
 
     """
+    for i in input_list: 
+    	if i == value:
+    		return True
 
-    return None
+    return False
 
 
 def custom_equality(some_list, another_list):
