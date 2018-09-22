@@ -131,6 +131,7 @@ def custom_remove(input_list, value):
     for i in input_list:
     	if i == value:
     		del input_list[index]
+    		break
     	index += 1
 
     pass
@@ -154,7 +155,9 @@ def custom_pop(input_list):
     index = 0
     for i in input_list:
     	if i == value:
-    		return del input_list[index]
+    		popped = input_list[index]
+    		del input_list[index]
+    		return popped
     	index += 1
 
 
