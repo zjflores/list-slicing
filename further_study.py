@@ -127,7 +127,11 @@ def custom_remove(input_list, value):
 
     """
 
-    input_list = input_list[1:]
+    index = 0
+    for i in input_list:
+    	if i == value:
+    		del input_list[index]
+    	index += 1
 
     pass
 
@@ -163,8 +167,11 @@ def custom_index(input_list, value):
         1
 
     """
-
-    return 0
+    index = 0
+    for i in input_list:
+    	if i == value:
+    		return index
+    	index += 1
 
 
 def custom_count(input_list, value):
