@@ -216,7 +216,8 @@ def custom_reverse(input_list):
         True
 
     """
-    input_list = input_list[::-1]
+    stop = custom_len(input_list)
+    input_list = input_list[:stop:-1]
 
     pass
 
