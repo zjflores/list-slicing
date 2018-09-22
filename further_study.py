@@ -152,13 +152,12 @@ def custom_pop(input_list):
         ['Jan', 'Feb']
 
     """
-    index = 0
-    for i in input_list:
-    	if i == value:
-    		popped = input_list[index]
-    		del input_list[index]
-    		return popped
-    	index += 1
+    final_index = custom_len(input_list) - 1
+    popped = input_list[final_index]
+    del input_list[final_index]
+    input_list = input_list[:final_index]
+    return popped
+
 
 
     
